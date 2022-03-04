@@ -14,7 +14,7 @@ app.use(cookieParser())
 app.set('view engine', 'ejs');
 
 // database connection
-const dbURI = 'mongodb://127.0.0.1:27017/node-auth';
+const dbURI = 'mongodb+srv://mrnabdulai:BIGBANG123@cluster0.bdiqx.mongodb.net/node-auth';
 mongoose.connect(dbURI)
   .then((result) => app.listen(process.env.PORT || 5000, ()=>{console.log("server started")
  }))
